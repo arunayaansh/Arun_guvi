@@ -1,0 +1,24 @@
+public class guvi {
+
+            public static void main(String[] args) {
+                Scanner sc = new Scanner(System.in);
+                double amount = sc.nextInt();
+
+                if(amount>500 && amount<1000){
+                    System.out.println("Congrats you have 10% discount");
+                    amount=amount-(amount*0.10);
+                    System.out.println("Your final amount after discount " +amount);
+                }
+                else if(amount>1000){
+                    System.out.println("Congrats you have 20% discount");
+                    amount=amount-(amount*0.20);
+                    System.out.println("Your final amount after discount " +amount);
+                }
+                else{
+                    System.out.println("Sorry- NO discounts");
+                }
+
+            }
+
+
+}
